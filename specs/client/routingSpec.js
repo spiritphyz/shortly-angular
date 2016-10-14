@@ -1,6 +1,6 @@
 'use strict';
 
-xdescribe('Routing', function () {
+describe('Routing', function () {
   var $route;
   beforeEach(module('shortly'));
 
