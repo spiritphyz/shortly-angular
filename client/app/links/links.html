@@ -1,5 +1,5 @@
 <div class='links-container' ng-controller="LinksController">
   <ul>
-   <li ng-repeat="link in data.links">{{link}}</li>
+   <li ng-repeat="link in data.links | orderBy: '-visits'">{{link}}</li>
   </ul>
 </div>

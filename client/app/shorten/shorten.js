@@ -10,7 +10,7 @@ angular.module('shortly.shorten', [])
   $scope.link = {};
 
   $scope.$watch('newUrl', function() {
-    if ($scope.newUrl.length > 1 && !isValidUrl($scope.newUrl)) {
+    if ($scope.newUrl.length > 13 && !isValidUrl($scope.newUrl)) {
       $scope.error = 'Invalid URL';      
     } else {
       $scope.error = '';
