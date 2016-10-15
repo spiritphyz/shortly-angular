@@ -9,4 +9,8 @@ angular.module('shortly.links', [])
       $scope.data.links = resp;
     });
   }();
+
+  $scope.$watch('filter', function() {
+    console.log($scope.filter);
+  });
 });
