@@ -1,6 +1,4 @@
 <div class='links-container' ng-controller="LinksController">
   <input ng-model="search" placeholder="Filter Links" />
-  <ul>
-   <li ng-repeat="link in data.links | orderBy: '-visits' | filter :{title:search}">{{link}}</li>
-  </ul>
+  <ng-shortened-link ng-repeat="link in data.links | orderBy: '-visits' | filter :{title:search}"></ng-shortened-link>
 </div>

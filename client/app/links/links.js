@@ -10,7 +10,30 @@ angular.module('shortly.links', [])
     });
   }();
 
-  $scope.$watch('filter', function() {
-    console.log($scope.filter);
-  });
+})
+
+
+.directive('ngShortenedLink', function() {
+  return {
+    template:
+      '<div class="code"> Code: {{link.code}} </div>' +
+      '<div class="url"> URL: {{link.url}} </div>' +
+      '<div class="title"> Title: {{link.title}} </div>' +
+      '<div class="visits"> Visits: {{link.visits}} </div>'
+  };
 });
+
+// .directive('ngShortenedLink', function() {
+//   return {
+//     scope: {
+//       datasource: '='
+//     },
+
+//     template: '<div>{{datasource}} HELLO </div>'
+  // template: '<div class="shortened">' + 
+  //     '<div class="code"> Code: {{data.links.code}} {{link.code}} </div>' +
+  //     '<div class="url"> URL: {{data.links.url}} {{link.url}} </div>' +
+  //     '<div class="visits"> Visits: {{data.links.visits}} {{link.visits}} </div>' +
+  //     '<div class="title"> Title: {{data.links.title}} {{link.title}} </div>' +
+  //     '</div>' 
+  
