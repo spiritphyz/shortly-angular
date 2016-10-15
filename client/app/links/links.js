@@ -16,10 +16,10 @@ angular.module('shortly.links', [])
 .directive('ngShortenedLink', function() {
   return {
     template:
-      '<div class="code"> Code: {{link.code}} </div>' +
-      '<div class="url"> URL: {{link.url}} </div>' +
-      '<div class="title"> Title: {{link.title}} </div>' +
-      '<div class="visits"> Visits: {{link.visits}} </div>'
+      '<div class="link code"> Code: {{link.code}} </div>' +
+      '<div class="link url"> URL: {{link.url}} </div>' +
+      '<div class="link title"> Title: {{link.title}} </div>' +
+      '<div class="link visits"> Visits: {{link.visits}} </div>'
   };
 });
 

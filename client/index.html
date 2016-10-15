@@ -9,14 +9,18 @@
     <h1>Shortly</h1>
 
     <!-- the ng-view directive is where our templates will be loaded into when naviagted to -->
-    <a href="#/signup">Signup</a>
-    <a href="#/signin">Signin</a>
-    <a href="#/links">Links</a>
-    <a href="#/shorten">Shorten</a>
+
+    <a ui-sref="signin" ui-sref-active="active">Signin</a>
+    <a ui-sref="signup" ui-sref-active="active">Signup</a>
+    <a ui-sref="links" ui-sref-active="active">Links</a>
+    <a ui-sref="shorten" ui-sref-active="active">Shorten</a>
 
     <div ng-view></div>
+    <div ui-view></div>
     <script src="lib/angular/angular.js"></script>
     <script src="lib/angular-route/angular-route.js"></script>
+    <script src="lib/angular-ui-router/release/angular-ui-router.js"></script>
+
 
     <script src="app/auth/auth.js"></script>
     <script src="app/links/links.js"></script>
